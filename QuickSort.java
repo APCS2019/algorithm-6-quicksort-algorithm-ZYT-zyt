@@ -6,7 +6,7 @@ public class QuickSort{
    	int key = start, j = end;
   	int i = key + 1;
     while(j > i){
-      if(a[i] >= a[key] && a[j] < a[key]){
+      if(a[i] >= a[key] && a[j] <= a[key]){
           int temp = a[i];
           a[i++] = a[j];
           a[j--] = temp;
